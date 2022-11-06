@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <form method="post" name="signin" action="/api/v1/user/signin">
+        <h1>Login Here</h1>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email address"
+          value="email"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          value="password"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input type="submit" value="Login" />
+
+        <p>Don't have an account? <a href="/signup">Signup</a></p>
+      </form>
+    </div>
+  </body>
+</html>

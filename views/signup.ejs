@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <form action="/api/v1/user/signup" method="post" name="signup">
+        <h1>Signup Here</h1>
+        <input
+          type="text"
+          name="first_name"
+          placeholder="Enter first name"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input
+          type="text"
+          name="last_name"
+          placeholder="Enter last name"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email address"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter username"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input type="submit" value="Sign up" />
+
+        <p>Already have an account? <a href="/login">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>

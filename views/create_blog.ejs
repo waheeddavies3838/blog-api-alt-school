@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create blog</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <form>
+        <h1>Create Blog</h1>
+        <input
+          type="text"
+          name="title"
+          placeholder="Enter title"
+          value="title"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <input
+          type="text"
+          name="description"
+          placeholder="Enter description"
+          value="description"
+          onchange="(e)=>console.log(e.target.value)"
+        />
+        <textarea id="blog-body" onchange="(e)=>console.log(e.target.value)">
+body</textarea
+        >
+        <fieldset id="tag-set">
+          <legend>Select blog tags</legend>
+          <input type="checkbox" name="tags" value="Education" />Cats<br />
+          <input type="checkbox" name="tags" value="Politics" />Dogs<br />
+          <input type="checkbox" name="tags" value="Technology" />Birds<br />
+          <input type="checkbox" name="tags" value="Business" />Birds<br />
+        </fieldset>
+        <input type="submit" value="Create Blog" />
+      </form>
+    </div>
+  </body>
+</html>
